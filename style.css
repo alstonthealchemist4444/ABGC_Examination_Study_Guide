@@ -156,7 +156,7 @@ body {
   font-size: 1rem;
   background-color: var(--forest);
   color: var(--parchment);
-  padding: 0.85rem 2 rem:
+  padding: 0.85rem 2 rem;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -164,8 +164,19 @@ body {
   letter-spacing: 0.03em;
   transition: background-color 0.2 ease, transform 0.1s ease;
 }
-  
-  
+
+.hero-button:hover,
+.draw-button:hover {
+          background-color: var(--forest-deep);
+}
+
+.hero-button:active,
+.draw-button:active {
+          transform: translateY(1px);
+}
+
+
+/* 7. CONDITIONS --------------------------------------------- */
   
   
 
