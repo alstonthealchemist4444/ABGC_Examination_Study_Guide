@@ -1,4 +1,185 @@
+/* =================================================
+THE COUNSELOR'S COMPENDIUM - stylesheet
+Sections: 1 variables 2 reset 3 layout 4 type
+          5 header/nav 6 hero/buttons 7 conditions
+          8 planetary picker 9 flashcard 10 practice patient
+          11 footer 12 focus & motion
+=================================================== */
 
+/* DESIGN TOKENS ----------------------------------- */
+:root {
+  --ink: #1c2b21;
+  --parchment: #f3ecd9;
+  --parchment-deep: #e8dcc0;
+  --forest: #2f5540;
+  --forest-deep: #1e3a2b;
+  --sage: #7a8b6f;
+  --gilt: #b08d4f;
+  --shadow: #rgba(30, 58, 43, 0.18);
+
+  /* celestial deck colors - the classical planets */
+  --mercury: #8a6a12;  /* Terminology - messenger of words */
+  --saturn:  #3d3d5c;  /* Inheritance - lord of lineage & time */
+  --mars:    #7e2e26;  /* Conditions - the body's afflictions */
+  --moon:    #556f92;  /* Testing - messenger of words */
+  --jupiter  #5b3f86;  /* Ethics - law & wisdom */
+
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "Lora", Georgia, serif;
+}
+
+/*  2. Reset ---------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--parchment);
+  background-image: radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.4), transparent 40%);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+/* 3. Layout ------------------------------------------------- */
+.site-header,
+.hero,
+.conditions,
+.deck-picker,
+.practice-patient,
+.site-footer {
+  max-width: 760px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.hero,
+.conditions,
+.deck-picker,
+.practice-patient {
+  padding-block: 4rem;
+}
+
+/* TYPOGRAPHY ------------------------------------------------ */
+.site-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+}
+
+.hero-heading,
+.section-heading {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  font-family: var(--body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  color: var(--forest-deep);
+  margin-bottom: 2.5rem;
+}
+
+/* HEADER & NAV ------------------------------------------- */
+.site-header {
+  text-align: center;
+  padding-block: 3rem 2 rem;
+  border-bottom: 1px solid var(--parchement-deep);
+}
+
+.site-mark {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--forest-deep);
+  margin-top: 1rem;
+}
+
+.site-subtitle {
+  font-style: italic;
+  color: var(--forrest-deep);
+  margin-top: 0.5rem;
+}
+
+.site-nav {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: var(--forest);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-botton: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.site-nav a {
+  border-bottom-color: var(--gilt);
+}
+
+
+/* 6. HERO & BUTTONS ---------------------------------------- */
+
+.hero {
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 60ch;
+  margin: 0 auto 2rem;
+  color: var(--forest-deep);
+}
+
+.hero-button,
+.draw-button {
+  display: inline-block;
+  font-family: var(--body);
+  font-size: 1rem;
+  background-color: var(--forest);
+  color: var(--parchment);
+  padding: 0.85rem 2 rem:
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: background-color 0.2 ease, transform 0.1s ease;
+}
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+/* PLANETARY DECK PICKER ---------------------------------- */
 .deck-picker {
   text-align: center;
 }
