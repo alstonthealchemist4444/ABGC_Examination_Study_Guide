@@ -15,5 +15,475 @@ const conditions = [
     clinicalPearl: "CATCH22: Cardiac changes, Abnormal facies, Thymic hypoplasia, Cleft palate, Hypocalemia, 22q.11del",
     notes: "TBX1 is the deleted gene responsible for cardiac symptoms."
     terminologyToKnow: " Codominance: two different allels are both fully expressed in an individual's phenotype i.e. Alpha-1 Antitrypsin Deficiency."
-  }
-]
+  },
+
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+  {
+    conditionName: 
+    diseaseCategory: 
+    gene: 
+    inheritance: 
+    majorClinicalFeatures: 
+    otherClinicalFeatures: 
+    mechanismPathophysiology: 
+    diagnosis: 
+    majorWorkUp: 
+    otherWorkUp: 
+    management: 
+    clinicalPearl: 
+    notes: 
+    terminologyToKnow: 
+  },
+
+  
+];
+
