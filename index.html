@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- =============== HEADER =============== -->
   <header class="site-header">
     <p class="site-mark">Est. 2026 Elon, NC</p>  
     <h1 class="site-title">The Gentic Counselor's Compendium</h1>
@@ -20,7 +22,10 @@
       <a href="#about">About</a>
     </nav>
   </header>
+  
 <main>
+
+  <!-- =========== HERO/ABOUT =========== -->
   <section class="hero" id="about>
     <p class="eyebrow">For those preparing to be certified</p>
     <h2 class="hero-heading">Everything you need to steady your hands before the ABGC Exam.</h2>
@@ -32,6 +37,8 @@
     </p>
     <a class="hero-button" href="#domains">Open the compendium</a>
   </section>
+
+  <!-- =========== CONDITIONS =========== -->
   <section class="conditions" id="conditions">
     <p class ="eyebrow"<The Materia medica</p>
     <h2 class="section-heading">Conditions</h2>
@@ -40,11 +47,19 @@
       essentials -- condition name, gene/inheritance, clinical pearl, natural history, 
       mechanism/pathophysiology, testing/diagnosis, and treatment/management.
     </p>
-
+    
+    <!-- JavaScript fills this container; leave it empty -->
     <div class="condition-list" ide="condition-list"></div>
   </section>
-  <section class="deck-picker" id="decks">
+  
+  <section class="deck-picker" id="flashcards">
     <p class="eyebrow">Choose your study</p>
+    <h2 class="section-heading">Flashcards</h2>
+    <p class="section-intro">
+      Tap the center to open the flashcard deck selector, choose a category, then click
+      the card to flip it and draw the next when you're ready.
+    </p>
+    
 
     <div class="orbit" id="orbit">
       <button class="orbit-hub" id="orbit-hub" aria-expanded="false" aria-controls="orbit">
@@ -57,7 +72,18 @@
       <button class="orbit-node" data-deck="testing"     style="--angle: 126deg;">Testing</button>
       <button class="orbit-node" data-deck="ethics"      style="--angle: 198deg;">Ethics</button>
     </div>
+
+    <div class="card" id="flashcard">
+      <p class="card-face card-front" id="card-front">Pick a flashcard deck above to begin.</p>
+      <p class="card-face card-back"  id="card-back"></p>
+    </div>
+
+    <button class="draw-button" id="draw-button">Draw the next card</button>
+    <p class="card-counter"     id="card-counter"></p> 
   </section>
+
+  <!-- ============= Practice Patient (reserved) ========== -->
+  
 
 
 
