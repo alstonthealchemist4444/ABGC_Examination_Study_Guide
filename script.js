@@ -16,12 +16,14 @@ const conditions = [
     mechanismPathophysiology: "2.54 Mb del; de novo 90%",
     diagnosis: "<strong>CMA</strong>, Karyotype, FISH",
     majorWorkUp: " Echo, Ca+2 serum, thyroid function test.",
-    otherWorkUp: "EKG, spine radiographs, renal ultrasound, CBC with differential, parathyroid hormone, Eval by: opthalmology, audiology, or immunology, ENT.",
+    otherWorkUp: "EKG, spine radiographs, renal ultrasound, CBC with differential, parathyroid hormone, Eval by: ophthalmology, audiology, or immunology, ENT.",
     management: "Feeding therapy, developmental services, surgical repair of cardiac/palatal changes, PRN Ca+2 supplement.",
     clinicalPearl: "CATCH22: Cardiac changes, Abnormal facies, Thymic hypoplasia, Cleft palate, Hypocalcemia, 22q.11del",
     notes: "TBX1 is the deleted gene responsible for cardiac symptoms.",
     terminologyToKnow: " Codominance: two different alleles are both fully expressed in an individual's phenotype i.e. Alpha-1 Antitrypsin Deficiency."
   },
+
+  ];
 /* ========== TEMPLATE  ========== */
 /*  
 {
@@ -60,8 +62,8 @@ const conditions = [
  ======================================================== */
 
 const allCards = [
-  { deck: "terminology", front: "Penetrance", back: "The proportion of carriers who showthe associated trait."},
-  { deck: "terminology", front: "Proband", back: "The individual whom a family is first ascertained." },
+  { deck: "terminology", front: "Penetrance", back: "The proportion of carriers who show the associated trait."},
+  { deck: "terminology", front: "Proband", back: "The individual through whom a family is first ascertained." },
   /* add more: { deck: "inheritance", front: "...", back: "..."}, */
 
   ];
@@ -118,14 +120,14 @@ function showCard() {
   if (activeCards.length === 0) {
     cardFront.textContent = "No cards in this deck yet.";
     cardBack.textContent = "";
-    cardCounter.textcontent = "";
+    cardCounter.textContent = "";
     return;
   }
 
   cardFront.textContent = activeCards[cardIndex].front;
   cardBack.textContent = activeCards[cardIndex].back;
   flashcard.classList.remove("flipped");
-  cardCounter.textContent = "Card" + (cardIndex + 1) + " of " + activeCards.length;
+  cardCounter.textContent = "Card " + (cardIndex + 1) + " of " + activeCards.length;
 }
 
 function loadDeck(deck) {
@@ -153,7 +155,7 @@ drawButton.addEventListener("click", function () {
 
 const orbit = document.getElementById("orbit");
 const orbitHub = document.getElementById("orbit-hub");
-const orbitNodes = document.getElementById("orbit-node");
+const orbitNodes = document.querySelectorAll(".orbit-node");
 
 function closeOrbit() {
   orbit.classList.remove("open");
@@ -166,9 +168,8 @@ orbitHub.addEventListener("click", function () {
   orbitHub.setAttribute("aria-expanded", isOpen);
   orbitHub.textContent = isOpen ? "Close" : "Choose a deck";
  });
-});
 
-orbitNodes.forEach(funtion (node) {
+orbitNodes.forEach(function (node) {
                    node.addEventListener("click", function () {
                      const deck = node.dataset.deck;
                      loanDeck(deck);
@@ -180,7 +181,7 @@ orbitNodes.forEach(funtion (node) {
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape" && orbit.classList.contains("open")) {
     closeOrbit();
-    orbit.textContent = "Choose a deck";
+    orbitHub.textContent = "Choose a deck";
   }
 });
 
