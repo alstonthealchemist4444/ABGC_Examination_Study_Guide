@@ -566,15 +566,77 @@ function showCard() {
     cardCounter.textcontent = "";
     return;
   }
-  
 
+  cardFront.textContent = activeCards[cardIndex].front;
+  cardBack.textContent = activeCards[cardIndex].back;
+  flashcard.classList.remove("flipped");
+  cardCounter.textContent = "Card" + (cardIndex + 1) + " of " + activeCards.length;
+}
 
+function loadDeck(deck) {
+  flashcard.dataset.deck = deck;     /* colors the card via CSS */
+  activeCards = allCards.filter(function (card) {
+      return card.deck === deck;
+  });
+  cardIndex = 0;
+  showCard();
+}
 
+flashcard.addEventListener("click", function () {
+  flashcard.classList.toggle("flipped");
+});
 
+drawButton.addEventListener("click", function () {
+  if (activeCards.length === 0) return;
+  cardIndex = (cardIndex + 1) % activeCards.length;
+  showCard();
+});
 
+/* ===============================================
+  Planetary Deck Picker
+=============================================== */
 
+const orbit = document.getElementById("orbit");
+const orbitHub = document.getElementById("orbit-hub");
+const orbitNodes = document.getElementById("orbit-node");
 
+function closeOrbit() {
+  orbit.classList.remove("open");
+  orbitHub.setAttribute("aria-expanded", "false");
+}
 
+orbitHub.addEventListener("click", function () {
+  orbit.classList.toggle("open");
+  const isOpen = orbit.classList.contains("open");
+  orbitHub.setAttribute("aria-expanded", isOpen);
+  orbitHub.textContent = isOpen ? "Close" : "Choose a deck";
+ });
+});
+
+orbitNodes.forEach(funtion (node) {
+                   node.addEventListener("click", function () {
+                     const deck = node.dataset.deck;
+                     loanDeck(deck);
+                     closeOrbit();
+                     orbitHub.textContent = node.textContent;
+                   });
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && orbit.classList.contains("open")) {
+    closeOrbit();
+    orbit.textContent = "Choose a deck";
+  }
+});
+
+document.addEventListener("click", function (event) {
+  if (orbit.classList.contains("open") && !orbit.contains(event.target)) {
+    closeOrbit();
+    orbitHub.textContent = "Choose a deck";
+  }
+});
+
+});
 
 
 
