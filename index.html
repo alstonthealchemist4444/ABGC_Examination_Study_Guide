@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale="1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Genetic Counselor's Compendium | CGC Study Guide</title>
-  <link rel="preconnect" href="htpps://fonts.googleapis.com">
-  <link rel="preconnect" href="htpps://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,8 +17,9 @@
     <h1 class="site-title">The Gentic Counselor's Compendium</h1>
     <p class="site-subtitle">A Study Apothecary for the ABGC Certification Exam</p>
     <nav class="site-nav">
-      <a href="#domains">Exam Domains</a>
+      <a href="#conditions">Conditions</a>
       <a href="#flashcards">Flashcards</a>
+      <a href="#practice-patient">Practice Patient</a>
       <a href="#about">About</a>
     </nav>
   </header>
@@ -26,7 +27,7 @@
 <main>
 
   <!-- =========== HERO/ABOUT =========== -->
-  <section class="hero" id="about>
+  <section class="hero" id="about">
     <p class="eyebrow">For those preparing to be certified</p>
     <h2 class="hero-heading">Everything you need to steady your hands before the ABGC Exam.</h2>
     <p class="hero-text">
@@ -35,12 +36,12 @@
       beloved fiancé. The world has not a chance to burden you with misinformation my
       beloved scholar of gentics working toward the coveted CGC credential.
     </p>
-    <a class="hero-button" href="#domains">Open the compendium</a>
+    <a class="hero-button" href="#conditions">Open the compendium</a>
   </section>
 
   <!-- =========== CONDITIONS =========== -->
   <section class="conditions" id="conditions">
-    <p class ="eyebrow"<The Materia medica</p>
+    <p class ="eyebrow">The Materia medica</p>
     <h2 class="section-heading">Conditions</h2>
     <p class="section-intro">
       A working shelf of the conditions I'm studying. Each entry holds the 
@@ -49,7 +50,7 @@
     </p>
     
     <!-- JavaScript fills this container; leave it empty -->
-    <div class="condition-list" ide="condition-list"></div>
+    <div class="condition-list" id="condition-list"></div>
   </section>
   
   <section class="deck-picker" id="flashcards">
@@ -68,7 +69,7 @@
 
       <button class="orbit-node" data-deck="terminology" style="--angle: -90deg;">Terminology</button>
       <button class="orbit-node" data-deck="inheritance" style="--angle: -18deg;">Inheritance</button>
-      <button class="orbit-node" data-deck="conditons"   style="--angle: 54deg;">Conditions</button>
+      <button class="orbit-node" data-deck="conditions"   style="--angle: 54deg;">Conditions</button>
       <button class="orbit-node" data-deck="testing"     style="--angle: 126deg;">Testing</button>
       <button class="orbit-node" data-deck="ethics"      style="--angle: 198deg;">Ethics</button>
     </div>
@@ -86,7 +87,7 @@
   
 <section class="practice-patient" id="practice-patient">
   <p class="eyebrow"> The Consulation Room</p>
-  < h2 class="section-heading">Practice Patient</h2>
+  <h2 class="section-heading">Practice Patient</h2>
   <p class="section-intro">
     A similated patient for rehearsing counseling sessions - taking a
     history, explaining inheritance, working through results. Coming Soon.
