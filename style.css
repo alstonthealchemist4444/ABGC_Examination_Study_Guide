@@ -177,18 +177,45 @@ body {
 
 
 /* 7. CONDITIONS --------------------------------------------- */
-  
-  
+.condition-list {
+          display: grid;
+          gap: 1.25rem;
+}
+. condition {
+          border: 1px solid var(--parchment-deep);
+          border-radius: 3px;
+          background-color: rgba(255, 255, 255, 0.35);
+          padding: 1.6rem 1.75rem;
+}
 
+.condition-name {
+          font-family: var(--display);
+          font-weight: 600;
+          font-size: 1.7rem;
+          color: var(--forest-deep);
+          margin-bottom: 1.1rem;
+          padding-botton: 0.6rem:
+          border-bottom: 1px solid var(--parchment-deep);
+}
 
+.condition-details {
+          display: grid;
+          gap: 0.9rem;
+}
 
+.condition-details dd {
+          font-family: var(--body);
+          font-size: 0.72rem;
+          text-transform: uppercase;
+          letter-spacing: 0.16em;
+          color: var(--gilt);
+          margin-bottom: 0.15rem;
+}
 
-
-
-
-
-
-
+.condition-details dd {
+          margin: 0;
+          color: war(--forest-deep);
+}
 
 /* PLANETARY DECK PICKER ---------------------------------- */
 .deck-picker {
