@@ -15,14 +15,14 @@ Sections: 1 variables 2 reset 3 layout 4 type
   --forest-deep: #1e3a2b;
   --sage: #7a8b6f;
   --gilt: #b08d4f;
-  --shadow: #rgba(30, 58, 43, 0.18);
+  --shadow: rgba(30, 58, 43, 0.18);
 
   /* celestial deck colors - the classical planets */
   --mercury: #8a6a12;  /* Terminology - messenger of words */
   --saturn:  #3d3d5c;  /* Inheritance - lord of lineage & time */
   --mars:    #7e2e26;  /* Conditions - the body's afflictions */
-  --moon:    #556f92;  /* Testing - messenger of words */
-  --jupiter  #5b3f86;  /* Ethics - law & wisdom */
+  --moon:    #556f92;  /* Testing - revealer of the hidden */
+  --jupiter:  #5b3f86;  /* Ethics - law & wisdom */
 
   --display: "Cormorant Garamond", Georgia, serif;
   --body: "Lora", Georgia, serif;
@@ -79,6 +79,7 @@ body {
   font-weight: 600;
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   line-height: 1.15;
+  color: var(--forest);
   margin-bottom: 1rem;
 }
 
@@ -98,8 +99,8 @@ body {
 /* HEADER & NAV ------------------------------------------- */
 .site-header {
   text-align: center;
-  padding-block: 3rem 2 rem;
-  border-bottom: 1px solid var(--parchement-deep);
+  padding-block: 3rem 2rem;
+  border-bottom: 1px solid var(--parchment-deep);
 }
 
 .site-mark {
@@ -107,12 +108,12 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--forest-deep);
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .site-subtitle {
   font-style: italic;
-  color: var(--forrest-deep);
+  color: var(--forest-deep);
   margin-top: 0.5rem;
 }
 
@@ -128,11 +129,11 @@ body {
   color: var(--forest);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  padding-botton: 2px;
+  padding-bottom: 2px;
   transition: border-color 0.2s ease;
 }
 
-.site-nav a {
+.site-nav a:hover {
   border-bottom-color: var(--gilt);
 }
 
@@ -156,13 +157,13 @@ body {
   font-size: 1rem;
   background-color: var(--forest);
   color: var(--parchment);
-  padding: 0.85rem 2 rem;
+  padding: 0.85rem 2rem;
   border: none;
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
   letter-spacing: 0.03em;
-  transition: background-color 0.2 ease, transform 0.1s ease;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .hero-button:hover,
@@ -181,7 +182,7 @@ body {
           display: grid;
           gap: 1.25rem;
 }
-. condition {
+.condition {
           border: 1px solid var(--parchment-deep);
           border-radius: 3px;
           background-color: rgba(255, 255, 255, 0.35);
@@ -194,7 +195,7 @@ body {
           font-size: 1.7rem;
           color: var(--forest-deep);
           margin-bottom: 1.1rem;
-          padding-botton: 0.6rem:
+          padding-bottom: 0.6rem;
           border-bottom: 1px solid var(--parchment-deep);
 }
 
@@ -203,7 +204,7 @@ body {
           gap: 0.9rem;
 }
 
-.condition-details dd {
+.condition-details dt {
           font-family: var(--body);
           font-size: 0.72rem;
           text-transform: uppercase;
@@ -214,7 +215,7 @@ body {
 
 .condition-details dd {
           margin: 0;
-          color: war(--forest-deep);
+          color: var(--forest-deep);
 }
 
 /* PLANETARY DECK PICKER ---------------------------------- */
@@ -251,12 +252,12 @@ body {
 
 .orbit-node {
           position: absolute;
-          top: 50%
-          left: 50%
+          top: 50%;
+          left: 50%;
           width: 4.6rem;
           height: 4.6rem;
           border-radius: 50%;
-          border: 1 px solid var(--gilt);
+          border: 1px solid var(--gilt);
           color: var(--parchment);
           font-family: var(--body);
           font-size: 0.8rem;
@@ -266,7 +267,7 @@ body {
           transform:
                     translate(-50%, -50%)
                     translate(
-                              calc(cos(var(--angle)) * var(--radius),
+                              calc(cos(var(--angle)) * var(--radius)),
                               calc(sin(var(--angle)) * var(--radius))
                     );
           opacity: 0;
@@ -292,11 +293,11 @@ body {
 .orbit-node[data-deck="ethics"]      {background-color: var(--jupiter); }
 
 /* staggered bloom (optional flourish) */
-.orbit-nodenth-child(2) {transition-delay: 0s; }
-.orbit-nodenth-child(3) {transition-delay: 0.04s; }
-.orbit-nodenth-child(4) {transition-delay: 0.08s; }
-.orbit-nodenth-child(5) {transition-delay: 0.12s; }
-.orbit-nodenth-child(6) {transition-delay: 0.16s; }
+.orbit-node:nth-child(2) {transition-delay: 0s; }
+.orbit-node:nth-child(3) {transition-delay: 0.04s; }
+.orbit-node:nth-child(4) {transition-delay: 0.08s; }
+.orbit-node:nth-child(5) {transition-delay: 0.12s; }
+.orbit-node:nth-child(6) {transition-delay: 0.16s; }
 
 /* Flashcard ----------------------------------------------------- */
 
@@ -310,7 +311,7 @@ body {
           align-items: center;
           justify-content: center;
           background-color: var(--forest);
-          color: var(--forest);
+          color: var(--parchment);
           border-radius: 4px;
           box-shadow: 0 12px 30px var(--shadow);
           cursor: pointer;
@@ -370,7 +371,7 @@ body {
 
 .chat-placeholder {
           font-style: italic;
-          colors: var(--sage);
+          color: var(--sage);
 }
 
 /* FOOTER ---------------------------------------------------------- */
