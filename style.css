@@ -235,19 +235,171 @@ body {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  border: none;
-  background-color: var(--forest);
-  color: var(--parchment);
+  border: 1px solid var(--gilt);
+  background-color: var(--forest-deep);
+  color: var(--gilt);
   font-family: var(--body);
   font-size: 1rem;
   line-height: 1.2;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: filter 0.2s ease;
 }
 
 .orbit-hub:hover {
-  background-colorL var(--forest-deep);
+  filter: brightness(1.2);
 }
+
+.orbit-node {
+          position: absolute;
+          top: 50%
+          left: 50%
+          width: 4.6rem;
+          height: 4.6rem;
+          border-radius: 50%;
+          border: 1 px solid var(--gilt);
+          color: var(--parchment);
+          font-family: var(--body);
+          font-size: 0.8rem;
+          cursor: pointer;
+
+          --radius: 0rem;
+          transform:
+                    translate(-50%, -50%)
+                    translate(
+                              calc(cos(var(--angle)) * var(--radius),
+                              calc(sin(var(--angle)) * var(--radius))
+                    );
+          opacity: 0;
+          pointer-events: none;
+          transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.3, 1), opacity 0.3s ease, filter 0.2s ease;
+}
+
+.orbit.open .orbit-node {
+          --radius: 9rem;
+          opacity: 1;
+          pointer-events: auto;
+}
+
+.orbit-node:hover {
+          filter: brightness(1.14);
+}
+
+/* each planet its own color, matched by the deck it carries */
+.orbit-node[data-deck="terminology"] {background-color: var(--mercury); }
+.orbit-node[data-deck="inheritance"] {background-color: var(--saturn); }
+.orbit-node[data-deck="conditions"]  {background-color: var(--mars); }
+.orbit-node[data-deck="testing"]     {background-color: var(--moon); }
+.orbit-node[data-deck="ethics"]      {background-color: var(--jupiter); }
+
+/* staggered bloom (optional flourish) */
+.orbit-nodenth-child(2) {transition-delay: 0s; }
+.orbit-nodenth-child(3) {transition-delay: 0.04s; }
+.orbit-nodenth-child(4) {transition-delay: 0.08s; }
+.orbit-nodenth-child(5) {transition-delay: 0.12s; }
+.orbit-nodenth-child(6) {transition-delay: 0.16s; }
+
+/* Flashcard ----------------------------------------------------- */
+
+.card {
+          position: relative;
+          max-width: 420px;
+          min-height: 220px;
+          margin: 0 auto 1.75rem;
+          padding: 2.5rem 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--forest);
+          color: var(--forest);
+          border-radius: 4px;
+          box-shadow: 0 12px 30px var(--shadow);
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-face {
+          font-family: var(--display);
+          font-size: 1.5rem;
+          line-height: 1.3;
+}
+
+.card-back {
+          display: none;
+}
+
+.card.flipped .card-front {
+          display: none;
+}
+
+.card.flipped .card-back {
+          display: block;
+}
+
+/* card takes on the chosen deck's color */
+.card[data-deck="terminology"] { background-color: var(--mercury); }
+.card[data-deck="inheritance"] { background-color: var(--saturn); }
+.card[data-deck="conditions"] { background-color: var(--mars); }
+.card[data-deck="testing"] { background-color: var(--moon); }
+.card[data-deck="ethics"] { background-color: var(--jupiter); }
+
+.card-counter {
+          font-size: 0.85rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: var(--sage);
+          margin-top: 1.25rem;
+}
+
+/* PRACTICE PATIENT ------------------------------------------------ */
+.chat-window {
+          min-height: 320px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem;
+          border: 1px solid var(--parchment-deep);
+          border-radius: 4px;
+          background-color: rgba(255, 255,255, 0.35);
+          background-image: repeating-linear-gradient(
+                    transparent,
+                    transparent 2.1rem,
+                    var(--parchment-deep) 2.1rem,
+                    var(--parchment-deep) calc(2.1rem + 1px)
+          );
+}
+
+.chat-placeholder {
+          font-style: italic;
+          colors: var(--sage);
+}
+
+/* FOOTER ---------------------------------------------------------- */
+.site-footer {
+          text-align: center;
+          padding-block: 3rem;
+          border-top: 1px solid var(--parchment-deep);
+          color: var(--forest-deep);
+}
+
+.footer-fine {
+          font-size: 0.85rem;
+          color: var(--sage);
+          margin-top: 0.5rem;
+}
+
+/* FOCUS & MOTION ------------------------------------------------- */
+a:focus-visible,
+button:focus-visible {
+          outline: 2px solid var(--gilt);
+          outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+          * {
+                    transition-duration: 0.01ms !important;
+          }
+}
+
 
 
 
