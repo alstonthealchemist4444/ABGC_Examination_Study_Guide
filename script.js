@@ -172,7 +172,7 @@ orbitHub.addEventListener("click", function () {
 orbitNodes.forEach(function (node) {
                    node.addEventListener("click", function () {
                      const deck = node.dataset.deck;
-                     loanDeck(deck);
+                     loadDeck(deck);
                      closeOrbit();
                      orbitHub.textContent = node.textContent;
                    });
