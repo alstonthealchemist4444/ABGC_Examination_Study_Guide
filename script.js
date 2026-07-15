@@ -1,4 +1,10 @@
-
+/* ======================================================== 
+  The Counselor's Compendium - behavior
+  You fill the datas section by hand. The machinery below
+  renders and drives whatever you put there.
+ ========================================================*/
+document.addEventListener("DOMContentLoaded", funtion() {
+  
 const conditions = [
   {
     conditionName: "22q11.2 del syndrome (DiGeorge or Velocardiofacial Syndrome)",
@@ -16,7 +22,7 @@ const conditions = [
     notes: "TBX1 is the deleted gene responsible for cardiac symptoms.",
     terminologyToKnow: " Codominance: two different alleles are both fully expressed in an individual's phenotype i.e. Alpha-1 Antitrypsin Deficiency."
   },
-
+/* ========== TEMPLATE  ========== */
   {
     conditionName: 
     diseaseCategory: 
@@ -33,8 +39,11 @@ const conditions = [
     notes: 
     terminologyToKnow: 
   },
+/* ========== TEMPLATE  ========== */
 
-  
+/* ======================================== 
+~ Enter additional conditions below this template ~  
+========================================*/
   {
     conditionName: 
     diseaseCategory: 
