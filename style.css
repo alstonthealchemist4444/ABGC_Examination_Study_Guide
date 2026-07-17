@@ -16,7 +16,11 @@ Sections: 1 variables 2 reset 3 layout 4 type
   --sage: #7a8b6f;
   --gilt: #b08d4f;
   --shadow: rgba(30, 58, 43, 0.18);
-
+  --sun:     #a85a11;  /* General - vitality, the body entire */
+  --venus:   #3f6b52;  /* Repeat Disorders - copper, verdigris, cycles */
+  --uranus:  #2d6b6b;  /* Aneuploidies - sudden disruption */
+  --neptune: #26456e;  /* Microdel/dup - dissolution */
+  --pluto:   #46324a;  /* Cancer - transformation */
   /* celestial deck colors - the classical planets */
   --mercury: #8a6a12;  /* Terminology - messenger of words */
   --saturn:  #3d3d5c;  /* Inheritance - lord of lineage & time */
@@ -186,7 +190,6 @@ body {
           border: 1px solid var(--parchment-deep);
           border-radius: 3px;
           background-color: rgba(255, 255, 255, 0.35);
-          padding: 1.6rem 1.75rem;
 }
 
 .condition-name {
@@ -217,6 +220,88 @@ body {
           margin: 0;
           color: var(--forest-deep);
 }
+
+.condition-controls {
+  margin-bottom: 1.5rem;
+}
+
+#condition-search {
+  width: 100%;
+  font-family: var(--body);
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--parchment-deep);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--ink);
+}
+
+#condition-search:focus {
+  outline: none;
+  border-color: var(--gilt);
+}
+
+.condition-count {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-top: 0.6rem;
+}
+
+.condition-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: 1.3rem;
+  color: var(--forest-deep);
+  text-align: left;
+}
+
+.condition-gene {
+  font-family: var(--body);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  background-color: var(--parchment-deep);
+  color: var(--forest-deep);
+}
+
+.condition-title { flex-grow: 1; }
+
+.condition-sign {
+  font-size: 1.4rem;
+  color: var(--gilt);
+}
+
+.condition-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.condition.open .condition-body {
+  max-height: 2000px;
+}
+
+.condition-body .condition-details {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.condition-empty {
+  text-align: center;
+  font-style: italic;
+  color: var(--sage);
+  padding: 2rem 0;
+}
+
 
 /* PLANETARY DECK PICKER ---------------------------------- */
 .deck-picker {
@@ -291,6 +376,38 @@ body {
 .orbit-node[data-deck="conditions"]  {background-color: var(--mars); }
 .orbit-node[data-deck="testing"]     {background-color: var(--moon); }
 .orbit-node[data-deck="ethics"]      {background-color: var(--jupiter); }
+
+/* ---- Using deck picker to color the updated accordian flashcards ---------*/
+.orbit-node[data-category="Blood/Immune Disorders"] { background-color: var(--mars); }
+.orbit-node[data-category="Musculoskeletal"]        { background-color: var(--saturn); }
+.orbit-node[data-category="Neuro"]                  { background-color: var(--mercury); }
+.orbit-node[data-category="Metabolic Disorders"]    { background-color: var(--jupiter); }
+.orbit-node[data-category="General"]                { background-color: var(--sun); }
+.orbit-node[data-category="Microdel/dup"]           { background-color: var(--neptune); }
+.orbit-node[data-category="Repeat Disorders"]       { background-color: var(--venus); }
+.orbit-node[data-category="Imprinting Disorders"]   { background-color: var(--moon); }
+.orbit-node[data-category="Aneuploidies"]           { background-color: var(--uranus); }
+.orbit-node[data-category="Cancer"]                 { background-color: var(--pluto); }
+
+#condition-orbit {
+  height: 32rem;
+}
+
+#condition-orbit .orbit-node {
+  width: 5.4rem;
+  height: 5.4rem;
+  font-size: 0.7rem;
+}
+
+#condition-orbit.open .orbit-node {
+  --radius: 11.5rem;
+}
+
+#condition-orbit .orbit-node:nth-child(7)  { transition-delay: 0.2s; }
+#condition-orbit .orbit-node:nth-child(8)  { transition-delay: 0.24s; }
+#condition-orbit .orbit-node:nth-child(9)  { transition-delay: 0.28s; }
+#condition-orbit .orbit-node:nth-child(10) { transition-delay: 0.32s; }
+#condition-orbit .orbit-node:nth-child(11) { transition-delay: 0.36s; }
 
 /* staggered bloom (optional flourish) */
 .orbit-node:nth-child(2) {transition-delay: 0s; }
@@ -400,7 +517,6 @@ button:focus-visible {
                     transition-duration: 0.01ms !important;
           }
 }
-
 
 
 
