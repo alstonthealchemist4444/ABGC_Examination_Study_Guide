@@ -50,16 +50,38 @@
     </p>
     
     <!-- JavaScript fills this container; leave it empty -->
-    <div class="condition-list" id="condition-list"></div>
-  </section>
-  
-  <section class="deck-picker" id="flashcards">
-    <p class="eyebrow">Choose your study</p>
-    <h2 class="section-heading">Flashcards</h2>
-    <p class="section-intro">
-      Tap the center to open the flashcard deck selector, choose a category, then click
-      the card to flip it and draw the next when you're ready.
-    </p>
+    <section class="conditions" id="conditions">
+      <p class="eyebrow">The Materia medica</p>
+      <h2 class="section-heading">Conditions</h2>
+      <p class="section-intro">
+        A working shelf of the conditions I'm studying. Choose a sphere to filter
+        by category, or search by name or gene.
+      </p>
+
+      <div class="orbit" id="condition-orbit">
+        <button class="orbit-hub" id="condition-hub" aria-expanded="false" aria-controls="condition-orbit">
+          All conditions
+        </button>
+
+        <button class="orbit-node" data-category="Blood/Immune Disorders" style="--angle: -90deg;">Blood</button>
+        <button class="orbit-node" data-category="Musculoskeletal"        style="--angle: -54deg;">Bone</button>
+        <button class="orbit-node" data-category="Neuro"                  style="--angle: -18deg;">Neuro</button>
+        <button class="orbit-node" data-category="Metabolic Disorders"    style="--angle: 18deg;">Metabolic</button>
+        <button class="orbit-node" data-category="General"                style="--angle: 54deg;">General</button>
+        <button class="orbit-node" data-category="Microdel/dup"           style="--angle: 90deg;">Microdel</button>
+        <button class="orbit-node" data-category="Repeat Disorders"       style="--angle: 126deg;">Repeat</button>
+        <button class="orbit-node" data-category="Imprinting Disorders"   style="--angle: 162deg;">Imprint</button>
+        <button class="orbit-node" data-category="Aneuploidies"           style="--angle: 198deg;">Aneuploidy</button>
+        <button class="orbit-node" data-category="Cancer"                 style="--angle: 234deg;">Cancer</button>
+      </div>
+
+      <div class="condition-controls">
+        <input type="search" id="condition-search" placeholder="Search name or gene">
+        <p class="condition-count" id="condition-count"></p>
+      </div>
+
+      <div class="condition-list" id="condition-list"></div>
+    </section>
     
 
     <div class="orbit" id="orbit">
