@@ -11,9 +11,6 @@ const conditions = [
    Transcribed from EveryGene_Flashcards__101_Conditions.xlsx
    (Sheet1, rows noted per object)
 
-   PASTE THESE INSIDE the conditions array, ABOVE the ];
-   Replace your existing 22q11.2 object — it is included here.
-
    Text is verbatim from the sheet. The ONLY changes are HTML
    escapes so the characters survive innerHTML rendering:
       &  ->  &amp;      (5 cells)
@@ -456,6 +453,8 @@ const conditions = [
     notes: "Hemophilia B patients benefit from at least an annual assessment at a hemophilia treatment center",
     terminologyToKnow: ""
   },
+
+  ];
   
 /* ========== TEMPLATE  ========== */
   
